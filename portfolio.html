@@ -1,0 +1,275 @@
+<html>
+    <header>
+        <style>
+             body {background-image: url('https://www.wallpaperup.com/uploads/wallpapers/2013/12/02/182518/8854ad3013a3ae7072656c43ec1a568b.jpg');
+              background-attachment:fixed;
+              background-size: 100% 100%;
+              }
+
+             
+	         nav{
+               float:right;
+               padding-top: -15px;
+               padding-right: 40px;  
+               }
+             
+     		 a {
+                padding: 20px 20px;
+                font-size: 30px;
+            }
+			
+            a:link {
+              text-decoration: underline;
+              color: white;
+            }
+            
+            a:visited {
+              text-decoration: underline;
+              color: white;
+            }
+            
+            a:hover {
+              text-decoration: none;
+              color: black;
+            }
+            
+            a:active {
+              text-decoration: none;
+              color: black;
+            }
+			
+
+             h1 {
+             background-color:rgba(202, 32, 202, 0.582);
+             color: white;
+             text-align: center;
+             font-family:"Brush Script MT", cursive;
+             font-size: 400%;
+             }
+			 
+			 .h2 {
+             color: white;
+             float:left;
+             padding-top: -10px;
+             padding-left:180px;   
+             font-family: Garamond Bold;
+              }
+
+             h3 {
+             color: lightgray;
+             padding-left:center ;
+             font-family: Garamond Bold;
+			 font-size: 120%;
+              }
+			  
+             
+             p{
+               text-align: center;
+               font-family:Garamond Bold;
+               font-size: 200%;
+			   color:yellow;
+             }
+            
+            
+           
+            * {box-sizing: border-box}
+            ., .Photography, .Rebranding, .Graphic Design {display: none}
+            img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 250px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next */
+ .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+		
+
+		
+        </style>
+    </header>
+
+    <body>
+	
+	  <h1>My Works</h1>
+        <nav>
+           
+       	<a href="home.html">home</a>
+        <a href="about me.html">about me</a>
+        <a href="portfolio.html">portfolio</a>
+        <a href="contact.html">contact</a>
+        </nav>
+         
+		 
+        <div class="h2">
+        <h2>aicyxx</h2>
+        </div>
+          
+                                      
+            </br></br>
+           
+         
+            </br> 
+                <div class="column">
+                  <p>Photography</p>
+                  <div class="slideshow-container">
+                    <div class="Photography">
+                      <img src=" https://i.ibb.co/6tfVJVN/Crystal-Ball-Photography-Ideas-Photo-Example-abrittonphotography.jpg"width="240" height="240" alt=""/> 
+                    </div>
+                  
+                    <div class="Photography">
+                      <img src=" https://i.ibb.co/nR48270/Hearts-in-nature-Heart-in-nature-Clouds-Nature.jpg" width="240" height="240" alt=""/>  
+                    </div>
+                  
+                    
+                    <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                  </div>
+
+                  <script>
+                    var slideIndex = [1,1];
+                    var slideId = ["Photography", "Rebranding","Graphic Design"]
+                    showSlides(1, 0);
+                    showSlides(1, 1);
+                    showSlides(1, 2);
+                    
+                    function plusSlides(n, no) {
+                      showSlides(slideIndex[no] += n, no);
+                    }
+                    
+                    function showSlides(n, no) {
+                      var i;
+                      var x = document.getElementsByClassName(slideId[no]);
+                      if (n > x.length) {slideIndex[no] = 1}    
+                      if (n < 2) {slideIndex[no] = x.length}
+                      for (i = 0; i < x.length; i++) {
+                         x[i].style.display = "none";  
+                      }
+                      x[slideIndex[no]-1].style.display = "block";  
+                    }
+                    </script>
+
+                    <center>
+                 <h3>This project is designed to create a logbook for aicyxx's collection that can be shown to customers.</h3>
+                 <h3>Using Camera & Adobe Photoshop</h3>     
+                 </center>
+                </div>
+                
+              </br></br>
+              <div class="column">
+                <p>Rebranding</p>
+                <div class="slideshow-container">
+                  <div class="Rebranding">
+                    <img src="https://i.ibb.co/1fzFsGs/Designer-Challenges-Himself-To-Create-A-Typographic-Logo-Every-Day-For-A-Year-And-They-re-Pretty-Coo.jpg"width="240" height="240" alt=""/>  
+                  </div>
+                
+                  <div class="Rebranding">
+                    <img src="https://i.ibb.co/kcrFWDk/Xprize-Logo-Real-Company-Alphabet-Letter-X-Logo.jpg"width="240" height="240" alt=""/>
+                  </div>
+                
+     
+                 
+                  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a>
+                </div>
+                  
+                <script>
+                  var slideIndex = [1,1];
+                  var slideId = ["Photography", "Rebranding","Graphic Design"]
+                  showSlides(1, 0);
+                  showSlides(1, 1);
+                  showSlides(1, 2);
+                  
+                  function plusSlides(n, no) {
+                    showSlides(slideIndex[no] += n, no);
+                  }
+                  
+                  function showSlides(n, no) {
+                    var i;
+                    var x = document.getElementsByClassName(slideId[no]);
+                    if (n > x.length) {slideIndex[no] = 1}    
+                    if (n < 2) {slideIndex[no] = x.length}
+                    for (i = 0; i < x.length; i++) {
+                       x[i].style.display = "none";  
+                    }
+                    x[slideIndex[no]-1].style.display = "block";  
+                  }
+                  </script>
+
+            <center>
+            <h3>At the request of clients looking to advertise their goods, this project was developed.</h3>
+                <h3>Using Adobe Photoshop & Adobe Illustrator</h3>     
+              </center>
+              
+            </br></br>
+            <p>Graphic Design</p>
+<div class="slideshow-container">
+  <div class="Graphic Design">
+    <img src="https://i.ibb.co/HTJ6MSP/Best-Illustration-Graphic-Design-Samples.jpg"width="240" height="240" alt=""/>   
+  </div>
+
+  <div class="Graphic Design">
+    <img src="https://i.ibb.co/G0pyWzK/Colorful-Rounded-Ink-Smoke-Frame-Smoke-Ink-Ink-Smoke-PNG-Transparent-Clipart-Image-and-PSD-File-for.jpg"width="240" height="240" alt=""/>
+  </div>
+
+  
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+</div>
+
+<script>
+var slideIndex = [1,2];
+var slideId = ["Photography", "Rebranding","Graphic Design"]
+showSlides(1, 0);
+showSlides(1, 1);
+showSlides(1, 2);
+
+function plusSlides(n, no) {
+  showSlides(slideIndex[no] += n, no);
+}
+
+function showSlides(n, no) {
+  var i;
+  var x = document.getElementsByClassName(slideId[no]);
+  if (n > x.length) {slideIndex[no] = 1}    
+  if (n < 2) {slideIndex[no] = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex[no]-1].style.display = "block";  
+}
+</script>
+            <center>
+                <h3>Customers that wish to customise their own products have requested this initiative .</h3>
+                <h3>Using Adobe Photoshop & Adobe Illustrator</h2>     
+          </center>
+        </br></br></br>
+       
+    </body>
+</html>
